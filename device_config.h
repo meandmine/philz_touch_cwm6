@@ -26,6 +26,19 @@
 #define BOOTLOADER_CMD_ARG "download"
 #endif
 
+// i577 - Galaxy S Exhilarate
+#ifdef TARGET_DEVICE_I577
+#define BOARD_UMS_LUNFILE     "/sys/devices/platform/msm_hsusb/gadget/lun%d/file"
+#define BOOTLOADER_CMD_ARG "download"
+#endif
+
+// fascinatemtd - Galaxy S Fascinate
+#ifdef TARGET_DEVICE_fascinatemtd
+#define BOARD_UMS_LUNFILE     "/sys/class/android_usb/android0/f_mass_storage/lun/file"
+#define BOOTLOADER_CMD_ARG "download"
+#endif
+
+
 // i9100G - Galaxy S2 i9100G
 #ifdef TARGET_DEVICE_I9100G
 #define BOARD_UMS_LUNFILE     "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"

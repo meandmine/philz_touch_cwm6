@@ -80,6 +80,16 @@ ifeq ($(TARGET_PRODUCT), cm_i9100)
 TARGET_COMMON_NAME := i9100
 LOCAL_CFLAGS += -DTARGET_DEVICE_I9100
 
+#Exhilarate - i577
+else ifeq ($(TARGET_PRODUCT), cm_i577)
+TARGET_COMMON_NAME := i577
+LOCAL_CFLAGS += -DTARGET_DEVICE_i577
+
+#Fascinate - fascinatemtd
+else ifeq ($(TARGET_PRODUCT), cm_fascinatemtd)
+TARGET_COMMON_NAME := fascinatemtd
+LOCAL_CFLAGS += -DTARGET_DEVICE_fascinatemtd
+
 #Galaxy S2 - i9100g
 else ifeq ($(TARGET_PRODUCT), cm_i9100g)
 TARGET_COMMON_NAME := i9100G
